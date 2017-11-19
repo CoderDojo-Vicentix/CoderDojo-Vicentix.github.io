@@ -1,0 +1,31 @@
+
+.side-headshot-modal-link-quotees {
+    height: auto;
+    padding-top: 0px;
+    padding-left: 50px
+}
+
+.side-article-body {
+    padding-right: 10%;
+    padding-left: 2%;
+    padding-bottom: 5%;
+    background: #fff;
+}
+
+.attention_pointer {
+  left: 40%;
+  position: absolute;
+  top: 75%;"
+}
+
+.attention_banner {
+  background-color: #0092d4;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+.article-body-pt {
+  text-indent: 50px;
+  text-align: justify;
+}
