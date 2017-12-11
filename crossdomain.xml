@@ -3,6 +3,7 @@
 	<allow-access-from domain="scratchx.org" secure="false"/>
 	<allow-access-from domain="coderdojo-vicentix.github.io" />
 	<allow-access-from domain="coderdojo.vicentix.cf"/>
+	<allow-access-from domain="cdn.scratch.mit.edu"/>
 	<allow-access-from domain="scratch.mit.edu"/>
 	<allow-access-from domain="localhost"/>
 </cross-domain-policy>
