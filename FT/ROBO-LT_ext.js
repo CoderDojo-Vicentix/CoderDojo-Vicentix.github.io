@@ -440,7 +440,7 @@ var IO = {
 	ScratchExtensions.register('FischerTechnik ROBO-LT', descriptor, ext);
 	
 	// start the update loop: periodically fetch sensor values from the device
-	setInterval(ext.doUpdate, 55);
+	//setInterval(ext.doUpdate, 55);
 	
 	// ensure the ROBO LT is reset
 	ext.reset();
