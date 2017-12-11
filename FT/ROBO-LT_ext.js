@@ -275,7 +275,9 @@ var IO = {
 	// Status reporting code
 	// Use this to report missing hardware, plugin or unsupported browser
 	ext._getStatus = function() {
-		return IO.updateStatus();
+		//return IO.updateStatus();
+	        return {status: 2, msg: "Ready"};
+
 	};
 	
 	// reset the device
