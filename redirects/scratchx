@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="0; url=http://scratchx.org/?url=http://coderdojo-vicentix.github.io/FT/ROBO-LT_ext.js">
+        <script type="text/javascript">
+            window.location.href = "http://scratchx.org/?url=http://coderdojo-vicentix.github.io/FT/ROBO-LT_ext.js"
+        </script>
+        <title>A redireccionar para a página do ScratchX</title>
+    </head>
+    <body>
+        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
+        Se não fôr redireccionado automaticamente, vá manualmente para o <a href='http://scratchx.org/?url=http://coderdojo-vicentix.github.io/FT/ROBO-LT_ext.js'>ScratchX</a>.
+    </body>
+</html>
