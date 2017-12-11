@@ -1,8 +1,4 @@
 
-
-
-
-
 function getButtonState(state) {
 	return Lang.get(state);
 }
@@ -264,20 +260,11 @@ var IO = {
 		
 	// Cleanup function when the extension is unloaded
 	ext._shutdown = function() {};
-
-	    ext.req = function(type, url, data, callback) {
-			$.ajax({url: url, type: type, data: JSON.parse(data), success: function(d){
-				callback(JSON.stringify(d));
-			}});
-	    };
-
 	
 	// Status reporting code
 	// Use this to report missing hardware, plugin or unsupported browser
 	ext._getStatus = function() {
-		//return IO.updateStatus();
-	        return {status: 2, msg: "Ready"};
-
+		return IO.updateStatus();
 	};
 	
 	// reset the device
@@ -401,6 +388,7 @@ var IO = {
 		
 	// Block and block menu descriptions
 	var descriptor = {
+		
 		blocks: [
 			
 			// events
@@ -419,7 +407,7 @@ var IO = {
 			[' ', Lang.get('setOutputVal'),			'setOutputVal',			'M1', 0],
 
 			[' ', Lang.get('reset'),				'reset'],
-	        	["R", "send %m.requests request to URL: %s with data %s", "req", "GET", "https://scratch.mit.edu/", null]			
+			
 		],
 		
 		menus: {
@@ -429,7 +417,6 @@ var IO = {
 			outputs:			['M1', 'M2'],
 			outputValues:		[0, 1, 2, 3, 4, 5, 6, 7, 8],
 			outputDirections:	[getMotorDirection('forward'), getMotorDirection('backwards')],
-	        	requests: ["GET", "POST", "PUT", "DELETE"]
 		},
 		
 		url: 'http://www.fischertechnik.de/desktopdefault.aspx/tabid-21/39_read-311/usetemplate-2_column_pano/',
@@ -440,10 +427,9 @@ var IO = {
 	ScratchExtensions.register('FischerTechnik ROBO-LT', descriptor, ext);
 	
 	// start the update loop: periodically fetch sensor values from the device
-	//setInterval(ext.doUpdate, 55);
+	setInterval(ext.doUpdate, 55);
 	
 	// ensure the ROBO LT is reset
 	ext.reset();
 	
 })({});
-
